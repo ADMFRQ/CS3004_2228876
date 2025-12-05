@@ -4,7 +4,8 @@ import java.io.*;
 
 import WLFB_Warehouse.WarehouseSharedState;
 
-
+// This class stores and updates the shared warehouse inventory of apples and oranges.
+// It sets up the locks each thread uses to access the variables in order to maintain their integrity while having multiple clients trying to access them at the same time
 
 
 public class WarehouseSharedState{
@@ -145,3 +146,4 @@ public class WarehouseSharedState{
     		return theOutput;
     	}	
 }
+
