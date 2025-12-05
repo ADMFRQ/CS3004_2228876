@@ -9,6 +9,8 @@ import WLFB_Warehouse.SupplierClient;
 import WLFB_Warehouse.CustomerAClient;
 import WLFB_Warehouse.CustomerBClient;
 
+// This class starts the warehouse server and listens for incoming client connections.
+// It accepts sockets from customers and suppliers then creates a new thread for each connection
 
 public class WarehouseServer {
 	  public static void main(String[] args) throws IOException {
@@ -47,3 +49,4 @@ public class WarehouseServer {
 		    WarehouseServerSocket.close();
 		  } 
 }
+
