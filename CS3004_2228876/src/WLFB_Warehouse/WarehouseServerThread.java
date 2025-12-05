@@ -5,6 +5,10 @@ import java.io.*;
 
 import WLFB_Warehouse.WarehouseSharedState;
 
+// This class is the thread that handles communication with the client.
+// It processes incoming requests and interacts with the WarehouseSharedState to update/read apple and orange variables
+// it also sends responses back to the client.
+
 public class WarehouseServerThread extends Thread{
 	
 	  private Socket warehouseSocket = null;
@@ -51,3 +55,4 @@ public class WarehouseServerThread extends Thread{
 	        }
 	      }
 }
+
