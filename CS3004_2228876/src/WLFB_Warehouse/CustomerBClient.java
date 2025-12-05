@@ -2,10 +2,14 @@ package WLFB_Warehouse;
 import java.net.*;
 import java.io.*;
 
+// This class creates the Customer B client setting up the socket and the in/out variables for client to server messages.
+// it also creates the socket that connects to the warehouse server's port number 
+// handles communication to the server from Customer B
+
+
 public class CustomerBClient {
     public static void main(String[] args) throws IOException {
 
-        // Set up the socket, in and out variables
 
         Socket ClientSocket = null;
         PrintWriter out = null;
@@ -52,4 +56,5 @@ public class CustomerBClient {
 //        stdIn.close();
 //        ClientSocket.close();
     }
+
 }
